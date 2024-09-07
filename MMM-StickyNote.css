@@ -1,0 +1,37 @@
+/* MMM-StickyNote.css */
+
+/* Style for the sticky note trigger */
+.sticky-note-trigger {
+    cursor: pointer;
+    background-color: #007bff; /* Blue color */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    user-select: none;
+  }
+  
+  /* Style for the sticky note */
+  .sticky-note {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    position: absolute; /* Adjust position as needed */
+    top: 50px; /* Adjust top position */
+    left: 50px; /* Adjust left position */
+    z-index: 1000; /* Ensure it is on top */
+    resize: both;
+    overflow: auto;
+  }
+  
+  /* Ensure the note is positioned correctly */
+  .sticky-note-trigger {
+    position: relative;
+    z-index: 1000;
+  }
+  
